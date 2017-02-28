@@ -26,7 +26,8 @@ public class AuthManager {
                     + "Employee.role "
                     + "FROM Employee "
                     + "WHERE password = '" + this.getPassword() + "' "
-                    + "AND email = '" + this.getEmail() + "'";
+                    + "AND email = '" + this.getEmail() + "' "
+                    + "AND isActive = true";
 
             // create a new Query object
             conn = new ConnectionManager();
